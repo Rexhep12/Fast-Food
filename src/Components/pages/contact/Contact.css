@@ -1,0 +1,70 @@
+/* Reset CSS dhe font-i kryesor */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Kontejneri kryesor */
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 24px;
+}
+
+/* Titulli */
+.contact-title {
+  font-size: 3rem; /* Madhësi e madhe për titullin */
+  font-weight: 800; /* Trashësi */
+  color: #ff0000; /* Ngjyra e kuqe dramatike */
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Përshkrimi */
+.contact-description {
+  font-size: 1.5rem; /* Madhësi mesatare për tekstin */
+  color: white;
+  margin-bottom: 32px;
+  text-align: center;
+  max-width: 600px; /* Kufizim i gjerësisë */
+}
+
+/* Lidhjet Sociale */
+.social-links {
+  display: flex;
+  gap: 32px; /* Hapësira mes ikonave */
+  justify-content: center;
+}
+
+/* Lidhje individuale */
+.social-link {
+  font-size: 3rem; /* Madhësi e madhe për ikonat */
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/* Ngjyra dhe stili për Instagram */
+.social-link.instagram {
+  color: #e1306c; /* Ngjyrë Instagram */
+}
+
+.social-link.instagram:hover {
+  color: #d6245f;
+  transform: scale(1.2); /* Efekt zmadhimi */
+}
+
+/* Ngjyra dhe stili për WhatsApp */
+.social-link.whatsapp {
+  color: #25d366; /* Ngjyrë WhatsApp */
+}
+
+.social-link.whatsapp:hover {
+  color: #20b954;
+  transform: scale(1.2); /* Efekt zmadhimi */
+}

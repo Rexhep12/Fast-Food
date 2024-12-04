@@ -1,0 +1,94 @@
+/* Sfondo dhe Efekte për Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.5); /* Gjysmë transparent */
+  backdrop-filter: blur(10px); /* Efekti i shkrifët */
+  height: 100px; /* Lartësia e navbar tani është 100px */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ndryshuar për të qendruar elementet horizontale në qendër */
+  padding: 0 20px; /* Spacing i brendshëm */
+  transition: all 0.5s ease-in-out; /* Kalim i butë për ndryshime */
+  background-image: url('../../assets/navbar-fast-food.jpg'); /* Rruga për imazhin */
+  background-size: cover; /* Shtrirje në të gjithë navbar-in */
+  background-position: center; /* Qendërzim i sfondit */
+  background-repeat: no-repeat;
+}
+
+/* Efekti Hover */
+.navbar:hover {
+  background: rgba(0, 0, 0, 0.7); /* Transparencë më e ulët gjatë hover */
+  transform: translateY(-2px); /* Lëvizje e lehtë lart gjatë hover */
+}
+
+/* Container i Navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Kufizim i gjerësisë */
+  padding: 0 20px;
+}
+
+/* Logo në majtë */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e63946; /* Ngjyrë e kuqe për logo */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Hije për theksim */
+}
+
+/* Logo e imazhit */
+.logo-img {
+  max-width: 120px; /* Madhi për logo */
+  height: auto; /* Ruajtja e përmasave të imazhit */
+}
+
+/* Menuja */
+.navbar-menu {
+  display: flex;
+  gap: 30px; /* Rrit distancën midis elementeve të menu-së */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link-et e menu-së */
+.navbar-link {
+  color: #e63946; /* Ngjyrë e kuqe për lidhjet */
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px; /* Skaje të rrumbullakosura */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Sfondo e bardhë transparente */
+  transform: scale(1.1); /* Zmadhohet gjatë hover */
+}
+
+/* Përshtatje për pajisje mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Ndryshon layout-in për mobil */
+    padding: 10px; /* Zvogëlon padding-un në mobil */
+  }
+
+  .logo {
+    font-size: 1.5rem; /* Zvogëlohet madhësia e logos */
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0; /* Ndryshon layout-in e menu-s */
+  }
+}

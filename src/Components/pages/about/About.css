@@ -1,0 +1,92 @@
+/* Kontejneri */
+.about-container {
+    position: relative;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Font modern dhe elegant */
+    text-align: center;
+    padding: 3rem; /* Rritim i hapësirës rreth përmbajtjes */
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url('../../../assets/pizza wodeen.jpeg'); /* Gradient për kontrast më të mirë */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Lartësi e plotë e faqes */
+    width: 100vw;  /* Gjerësi e plotë */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Përmbajtja */
+  .about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px; /* Rritje e maksimales për përmbajtje më të gjërë */
+    padding: 2rem 3rem; /* Hapësirë më e madhe për përmbajtjen */
+    background: rgba(255, 255, 255, 0.1); /* Transparent për pamje moderne */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Hijë moderne */
+  }
+  
+  /* Titulli */
+  .about-title {
+    font-size: 4rem; /* Rritje e madhësisë së titullit */
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffcc00; /* Ngjyrë që bie në sy */
+    letter-spacing: 4px; /* Rritje e hapësirës midis shkronjave */
+  }
+  
+  /* Përshkrimi */
+  .about-description {
+    font-size: 1.5rem; /* Rritje e fontit për përshkrimin */
+    line-height: 1.8;
+    margin-bottom: 2rem; /* Rritje e hapësirës pas përshkrimit */
+    max-width: 850px; /* Kufizim më i gjerë për dizajn të balancuar */
+    color: #f5f5f5; /* Ngjyrë më e lehtë për sy */
+  }
+  
+  /* Butoni */
+  .about-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem; /* Rritje e madhësisë së butonit */
+    color: #fff;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.4); /* Shtim i hijes për efekt */
+  }
+  
+  /* Efekti hover për butonin */
+  .about-button:hover {
+    background-color: #e64a19;
+    transform: translateY(-3px); /* Animacion për një ndjesi më interaktive */
+    box-shadow: 0 6px 14px rgba(255, 87, 34, 0.6); /* Hijë më e theksuar */
+  }
+  
+  /* Për stil modern dhe responsive */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2.5rem; /* Ulje e fontit për pajisje mobile */
+    }
+  
+    .about-description {
+      font-size: 1.2rem;
+    }
+  
+    .about-button {
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+    }
+  }
+  

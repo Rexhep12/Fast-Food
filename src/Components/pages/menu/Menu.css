@@ -1,0 +1,112 @@
+/* Stilizimi i container-it të menu-s */
+.menu-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Vendosja e kartave në qendër horizontalisht */
+  align-items: flex-start; /* Pozicionim në fillim të ekranit për të siguruar hapësirë */
+  background: #fbbf24; /* Sfonda */
+  padding: 0 10px; /* Padding për hapësirë shtesë */
+  box-sizing: border-box;
+  flex-direction: column; /* Përdorim të kolonës për menunë */
+  gap: 20px; /* Hapësirë mes secilës kategori */
+  padding-bottom: 40px; /* Hapësirë më e vogël poshtë për largimin nga scrolli */
+  margin-bottom: 30px; /* Hapësirë më e vogël poshtë kartave */
+}
+
+/* Stilizimi i kontejnerit për kategoritë */
+.categories-container {
+  display: flex;
+  flex-wrap: wrap; /* Lejon kartat të përhapen në dy rreshta */
+  gap: 20px; /* Hapësirë mes secilës kartë */
+  justify-content: center; /* Kartat janë të pozicionuara në qendër */
+  margin-right: 50px; /* Largimi i kartave pak nga ana e djathtë */
+  width: 100%; /* Përdor hapësirën e plotë */
+  max-width: 1000px; /* Kufizim për gjerësi të përgjithshme */
+  box-sizing: border-box;
+}
+
+/* Stilizimi i kartës së kategorisë */
+.category-card {
+  background: linear-gradient(to right, #fbbf24, #ef4444);
+  border-radius: 8px; /* Këndet e rrumbullakosura */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Kartat janë të orientuara në kolonë */
+  width: 45%; /* 2 karta në rresht */
+  height: 300px; /* Lartësia e kartës */
+  margin-bottom: 20px; /* Hapësirë poshtë kartës */
+}
+
+/* Efekti hover mbi kartë */
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Stilizimi i imazhit */
+.category-image {
+  width: 100%;
+  height: 150px; /* Lartësi e përshtatshme për imazhin */
+  object-fit: cover;
+  aspect-ratio: 1 / 1; /* Ruajtja e formës katrore */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Titulli i kategorisë */
+.category-title-container {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.category-title {
+  font-size: 1.5rem; /* Madhësi më të madhe për titujt */
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+/* Përshkrimi i kategorisë (poshtë secilës kartë) */
+.category-description {
+  padding: 1rem;
+  background-color: #f4f4f4; /* Ngjyra e butë që i përshtatët */
+  color: #333;
+  font-size: 1rem;
+  text-align: left; /* Përshkrimi është në anën e majtë */
+  border-bottom-left-radius: 8px; /* Këndet e rrumbullakosura për pjesën e përshkrimit */
+  border-bottom-right-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efekti hover për përshkrimin */
+.category-description:hover {
+  background-color: #fbbf24; /* Ndryshon ngjyrën kur kalon miu */
+}
+
+/* Footer për kartën */
+.category-footer {
+  display: flex;
+  justify-content: center; /* Qendërzim horizontal */
+  align-items: center; /* Qendërzim vertikal */
+  padding: 0.75rem;
+}
+
+.category-link {
+  background-color: #dc2626;
+  color: white;
+  padding: 0.75rem 1.5rem; /* Padding i përshtatshëm */
+  border-radius: 6px;
+  font-size: 1rem; /* Madhësi normale për tekstin */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.category-link:hover {
+  background-color: #9b1c1c;
+  
+}
